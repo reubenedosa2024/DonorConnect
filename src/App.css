@@ -841,7 +841,7 @@ margin: 1%;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
 }
 
@@ -868,22 +868,19 @@ margin: 1%;
 .hospital-list {
   width: 90%;
   margin: auto;
-  padding: 20px;
+  padding: 15px;
+ 
 }
 
 .hospital-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+ padding: 20px;
 }
 
 .hospital-header h2 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .hospital-body {
@@ -896,6 +893,7 @@ margin: 1%;
   width: 30%;
   font-size: 14px;
   color: #555;
+  text-align: left;
 }
 
 .hospital-hours {
@@ -925,20 +923,26 @@ margin: 1%;
 .hospital-actions button {
   width: 100%;
   border: none;
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
   font-size: 14px;
   cursor: pointer;
-  border-radius: 5px;
-  color: white;
+ background-color: white;
+ text-align: left
+}
+.hospital-list hr {
+  height: 2px; /* Adjust thickness */
+  background-color: black; /* Set color */
+  border: none; /* Remove default border */
+ 
 }
 
 .collection-type {
-  background-color: green;
+  background-color: ;
 }
 
 .schedule-appointment {
-  background-color: orange;
+  background-color: ;
 }
 
 /* Main container */
@@ -1106,13 +1110,432 @@ margin: 1%;
   border-radius: 5px;
   margin-top: 20px;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.notification-container {
+  width: 80%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+}
+
+.notification-header .tabs {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.notification-header .tabs button {
+  border: 1px solid #d1d1d1;
+  padding: 8px 15px;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.notification-header .tabs button.active {
+  background: #c41230;
+  color: white;
+}
+
+.notification-section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.notification-card {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  
+  border-left: 5px solid;
+  margin-bottom: 5px;
+  background-color: rgba(245, 238, 236, 1);
+ 
+}
+
+
+.notification-card.urgent {
+  display: flex;
+  flex-direction: row;
+  border-left-color: red;
+  background: #fce8e6;
+}
+
+
+.notification-card.appointment {
+  border-left-color: blue;
+  background-color: rgba(245, 238, 236, 1);
+}
+
+.notification-card.success {
+  border-left-color: green;
+  background: #e6f4ea;
+}
+
+.notification-card .icon {
+  font-size: 20px;
+}
+
+.notification-card .content {
+  flex-grow: 1;
+}
+
+.notification-card .content .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.notification-card .content .message {
+  font-size: 14px;
+  color: #333;
+}
+
+.notification-card .actions {
+  display: flex;
+  gap: 5px;
+}
+
+.notification-card .actions button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.notification-card .actions .accept {
+  background: green;
+  color: white;
+}
+
+.notification-card .actions .reject {
+  background: red;
+  color: white;
+}
+
+.notification-card .actions .confirm {
+  background: blue;
+  color: white;
+}
+
+.notification-card .actions .reschedule {
+  background: orange;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #003366;
+  color: white;
+}
+.filters{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+.filters button{
+ 
+  width: 160px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(51, 51, 51, 1);
+  border: 1px solid rgba(159, 22, 22, 1);
+}
+.filters button:hover{
+  background-color: rgba(159, 22, 22, 1);
+  color: white;
+}
+.notification-footer button{
+  width: 78px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(159, 22, 22, 1);
+  border: 1px solid rgba(159, 22, 22, 1);
+}
+.notification-card .actions {
+  display: flex;
+  flex-direction: row;  /* Ensure horizontal alignment */
+  gap: 10px; /* Adds spacing between buttons */
+  align-items: center;
+  justify-content: flex-end; /* Aligns to the right */
+  flex-wrap: wrap; /* Prevents overflow */
+}
+
+.notification-card .actions button {
+  padding: 5px 12px;
+  border: 1px solid red;
+  border-radius: 20px;
+  background: white;
+  color: red;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.notification-card .actions button:hover {
+  background: red;
+  color: white;
+}
 
 
 
 
+.donation-history {
+  width: 90%;
+  height: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.donation-history h2{
+  margin: 5%;
+}
 
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: left;
+  /* height: 371px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 1);
+}
+.card p{
+  padding: 3%;
+}
+
+.green { background: rgba(255, 255, 255, 1); color: ; }
+.blue { background: rgba(245, 238, 236, 1); color: ; }
+.red { background: rgba(255, 255, 255, 1); color: ; }
+
+.milestones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.milestone {
+  background: rgba(248, 249, 250, 1);
+  padding: 5px 10px;
+  border-radius: 50%;
+ 
+}
+.milestone:first-child {
+  background-color: rgba(209, 0, 0, 1);
+  color: white; /* Change to desired color */
+}
+
+.milestone:hover{
+  background-color: rgba(209, 0, 0, 1);
+  color: white;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.completed { color: rgba(67, 160, 71, 1); }
+.cancelled { color: rgba(21, 101, 192, 1); }
+.cardheadback p{
+  color: rgba(255, 255, 255, 1);
+  width: 256px;
+  height: 40px;
+  font-size: 24px;
+  font-weight: 700px;
+  
+  text-align: center;
+  padding-bottom: 15%;
+  border-radius: 5px;
+ 
+  background-color: rgba(209, 0, 0, 1);
+}
+.cardheadback{
+  margin: 2%;
+  margin-left: 7%;
+}
 
 @media(max-width:430px){
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .schedule-container{
+    height: 979px;
+  }
+  .hospital-hours {
+    width: 100%;
+  }
+  .hospital-actions {
+    width: 95%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .hospital-actions button {
+    width: 100%;
+    height: 5px;
+    border: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+   background-color: white;
+   text-align: left
+  }
+  
+  
+  .hospital-hours th,
+  .hospital-hours td {
+    border-bottom:none;
+    padding: 5px;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(51, 51, 51, 1);
+    line-height: 26px;
+  }
+  .hospital-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .hospital-list hr{
+    display: none;
+  }
+  .hospital-info{
+    font-weight: 400px;
+    font-size: 12PX;
+    line-height: 26px;
+  }
+  .find-donation-center {
+    text-align: left;
+    height: 600px;
+   
+  }
+  .find-donation-center p{
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 26px;
+  }
+  .find-donation-center h2{
+    font-size: 24px;
+    font-weight: 700px;
+    
+  }
+  .search-bar {
+   align-items: left;
+    
+  }
+  .search-bar button {
+    width: 309px;
+    
+    font-size: 12px;
+    font-weight: 700px;
+   
+  }
+  .map-container {
+    margin: 5%;
+    width: 330px;
+    max-width: 800px;
+    height:  299px;
+  }
+  
+  .map-container iframe,
+  .map-container img {
+    width:300px ;
+    height: 299px;
+   
+  }
+  
+  .image-grid {
+   display: flex;
+   flex-direction: column;
+  }
+  .donation-center{
+    height: 1700px;
+    text-align: left;
+  }
+  .donation-center p{
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 26px;
+  }
+  .blood-table {
+    width: 80%;
+   font-weight: 400px;
+   font-size: 12.8px;
+  }
+  .blood-table th {
+   font-weight: 700px;
+   font-size: 12.2px;
+    
+  }
+
+  .donorpageintro{
+   text-align: left;
+   padding: 4%;
+   
+  }
+  .donorpageintro p{
+    text-align: left;
+    padding: 4%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400px;
+   }
+   .donorpageintro h1{
+    font-size: 24px;
+    font-weight: 700px;
+   }
+   .donorpageintro button{
+    margin-left: 20%;
+   }
 	.wholeaboutsec{
     display: flex;
 	flex-direction:column;

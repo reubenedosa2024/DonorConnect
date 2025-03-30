@@ -50,6 +50,7 @@ const Hospitallist = () => {
         <div className="hospital-card" key={index}>
           <div className="hospital-header">
             <h2>{hospital.name}</h2>
+            <hr/>
           </div>
           <div className="hospital-body">
             <div className="hospital-info">

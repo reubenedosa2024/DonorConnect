@@ -6,6 +6,8 @@ import centerimage3 from "./images/centerimage3.png";
 import FindDonationCenter from "./FindDonationCenter";
 import Hospitallist from "./Hospitallist";
 import Schedule from "./Schedule";
+import Notification from "./Notification";
+import Donationhistory from "./Donationhistory";
 
 const DonorPage = () => {
     
@@ -74,6 +76,13 @@ const DonorPage = () => {
     <div>
       <Schedule/>
     </div>
+    <div>
+      <Notification/>
+    </div>
+    <div>
+      <Donationhistory/>
+    </div>
+
 
         </div>
     );
