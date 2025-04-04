@@ -7,7 +7,7 @@ const notificationsData = [
     type: "urgent",
     title: "Urgent : Blood type O+ Needed",
     message:
-      "Register no 484567 send a request as the blood matches with yours, please consider donating soon- save life with your donation Address No 24 victoria inland opposite first bank",
+      "Register no 484567 send a request as the blood matches with yours, please consider donating soon- save life with your donation  Address No 24 victoria inland opposite first bank",
     time: "5 minutes ago",
     actions: ["Accept", "Reject"],
     status: "unread",
@@ -83,13 +83,16 @@ const Notification = () => {
       <div className="notifications">
         {currentNotifications.map((n) => (
           <div key={n.id} className={`notification-card ${n.type} ${n.status}`}>
+            <div className="notiparting">
             <h3>{n.title}</h3>
             <p>{n.message}</p>
+           </div>
             <div className="notification-footer">
               {n.actions &&
                 n.actions.map((action, i) => <div className="actionbuttioncont"><button key={i}>{action}</button> </div>)}
-              <span>{n.time}</span>
+              
             </div>
+            <div className="ntime">{n.time}</div>
           </div>
         ))}
       </div>

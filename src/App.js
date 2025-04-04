@@ -3,7 +3,9 @@ import Layout from './Layout';
 import NoLayout from './NoLayout';
 import Homepage from './Homepage'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import  DonorPage from './DonorPage'
+import  DonorPage from './DonorPage';
+import Blogs from './Blogs';
+import Reciepientpage from './Reciepientpage'
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,8 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Homepage />} />
             <Route path="/donorPage" element={<DonorPage />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/reciepientpage" element={<Reciepientpage />} />
             
           </Route>
 

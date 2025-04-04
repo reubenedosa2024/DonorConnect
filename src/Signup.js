@@ -7,7 +7,6 @@ const SignUp = ({ closeOverlay }) => {
   return (
     <div className="modal">
       <h2>Create an Account</h2>
-       <b>Login</b>
       <div  className="signup-container">
       <div className="signup-btn">
         <FaGoogle className="icon" />
