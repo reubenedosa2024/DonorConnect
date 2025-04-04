@@ -23,7 +23,7 @@ const DonorPage = () => {
         ];
 
     return (
-        <div>
+        <div className='donorpagedown'>
             <div className='maindonorintro'>
         <div className='donorpageintro'>
            

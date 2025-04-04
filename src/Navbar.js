@@ -25,10 +25,12 @@ const Navbar = () => {
         </div>
         <div className="nav-links">
            <div className="navli"><p><Link to="/">Home</Link></p></div>
-           <div className="navli"><p>Form</p></div>
+          
            <div className="navli"><p><Link to="/donorPage">Donor</Link></p></div>
-           <div className="navli"><p>Recipients</p></div>
+           <div className="navli"><p><Link to="/reciepientpage">Recipients</Link></p></div>
            <div className="navli"><p>Hospital</p></div>
+           <div className="navli"><p><Link to="/blogs">Blogs</Link></p></div>
+           
         </div>
         <div className="buttondiv">
         <button onClick={() => openOverlay("signin")}>Sign In</button>
