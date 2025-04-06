@@ -28,7 +28,7 @@ const Navbar = () => {
           
            <div className="navli"><p><Link to="/donorPage">Donor</Link></p></div>
            <div className="navli"><p><Link to="/reciepientpage">Recipients</Link></p></div>
-           <div className="navli"><p>Hospital</p></div>
+           <div className="navli"><p><Link to ="/Hospitaldash" >Hospital</Link></p></div>
            <div className="navli"><p><Link to="/blogs">Blogs</Link></p></div>
            
         </div>

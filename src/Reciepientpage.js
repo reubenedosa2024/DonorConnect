@@ -41,7 +41,7 @@ const Reciepientpage = () => {
       <h1>Donor near you</h1>
     <p>See results that match your request</p>
     <div className="donor-grid">
-      {donorslist.map((donor) => (
+      {donorsData.map((donor) => (
         <Availabledonorcard key={donor.id} donor={donor} onRequest={handleRequest} />
       ))}
     </div>

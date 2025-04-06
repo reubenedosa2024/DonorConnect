@@ -42,9 +42,10 @@ const NotificationList = () => {
   return (
     <div className="notificationContainer">
       <h2 className="notificationTitle">Notification</h2>
+      <div className="notibut">
       <button className="allBtn">All</button>
       <input type="text" placeholder="Search" className="searchBox" />
-
+      </div>
       <div className="notificationGroup">
         <h3 className="categoryTitle">Today</h3>
         {notifications

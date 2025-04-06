@@ -10,7 +10,11 @@ const NotificationItem = ({ type, title, message, time }) => {
 
   return (
     <div className="notificationItem">
-      <div className="icon" style={{ backgroundColor: iconColors[type] }}></div>
+      <div className="icon" style={{ backgroundColor: iconColors[type] 
+      
+
+
+      }}></div>
       <div className="notificationContent">
         <h4 className="notificationTitle">{title}</h4>
         <p className="notificationMessage">{message}</p>
