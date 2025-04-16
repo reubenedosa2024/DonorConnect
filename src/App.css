@@ -40,7 +40,19 @@ nav{
  
 }
 .namelogo{
+  display: flex;
+  flex-direction: row;
   padding: 10px;
+  color: #D10000;
+  
+}
+.namelogo h2{
+  color: #333333;
+}
+.active-link {
+  color: #D10000; /* or any color you like */
+  font-weight: bold;
+ 
 }
 .buttondiv{
   padding: 10px;
@@ -62,11 +74,11 @@ background-color: rgba(159, 22, 22, 1);
 }
 .herosec{
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25)), 
-  url("images/herobackground.png");
+  url("images/newback.png");
 background-repeat:no-repeat;
 color:white;
 padding:10%;
-background-size: 100% 650px;
+background-size: 100% 730px;
 }
 .herotext{
   padding-top: 10%;
@@ -89,7 +101,7 @@ background-size: 100% 650px;
   height: 64px;
 }
 .herotext button{
-  background-color: rgba(159, 22, 22, 1);
+  background-color: #D10000;
   color:rgba(248, 249, 250, 1);
   height: 52px;
   width: 237px;
@@ -97,24 +109,32 @@ background-size: 100% 650px;
   border-radius: 50px;
   margin: 3%;
 }
-.aboutsec{
+.herotext button:hover{
+  color: #D10000 ;
+  background-color:white;
+  transition: background 1s ease;
+
+}
+/* .aboutsec{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2%;
   padding: 2%;
-}
-.abouttext{
- 
+} */
+/* .abouttext{
+ align-items: center;
+ text-align: center;
+ margin-left: 25%;
   gap: 28px;
-}
+} */
 .abouttext button{
-  background-color: rgba(248, 249, 250, 1);
-  color:rgba(159, 22, 22, 1);
-  height: 52px;
-  width: 190px;
-  border:2px solid rgba(159, 22, 22, 1);
-  border-radius: 50px;
+  background-color: #D10000;
+  color:#FFFFFF;
+  height: 54px;
+  width: 218px;
+  border:2px solid #D10000;
+  border-radius: 10px;
   margin: 3%;
 }
 .aboutsec {
@@ -125,37 +145,44 @@ background-size: 100% 650px;
 }
 
 .abouttext {
-  width: 50%;
+  width: 100%;
  color: rgba(51, 51, 51, 1);
+ text-align: center;
+ padding: 10%;
+ padding-top: 0;
+ padding-bottom: 0;
+ word-wrap: break-word;
 }
-.aboutimagediv {
+/* .aboutimagediv {
   position: relative;
   margin-top: 8%;
   height: 400px; /* Adjust as needed */
-}
+/* } */
 
-.aboutimagediv .image1 {
+/* .aboutimagediv .image1 {
   width: 100%;
   height: auto;
   border-radius: 20px; /* For rounded corners */
-}
+/* } */ */
 
-.aboutimagediv .image2 {
+/* .aboutimagediv .image2 {
   position: absolute;
   bottom: 170px; /* Adjust for positioning */
-  right: 100px; /* Adjust for positioning */
-  width: 85%; /* Smaller than the first image */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
-}
+ /* right: 100px; /* Adjust for positioning */
+ /* width: 85%; /* Smaller than the first image */
+  /*border-radius: 15px; /* Rounded corners */
+ /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);*/ /* Soft shadow */
+/* } */ */
 .subabout{
   margin: 4%;
   margin-top:2%;
   width: 1050px;
 }
 .wholeaboutsec{
-  background-color: rgba(248, 249, 250, 1);
- padding: 5%;
+  background-color: #F7F2F3;
+  text-align: center;
+  padding: 5%;
+  margin-top: 0;
 }
 .subabout ul li{
   margin-left:2.5%;
@@ -184,7 +211,7 @@ background-size: 100% 650px;
   font-weight: 400px;
 }
 .donationdes{
-  background-color: rgba(245, 238, 236, 1);
+  background-color: white;
 }
 .card1{
   width: 40%;
@@ -192,10 +219,7 @@ background-size: 100% 650px;
   background-color: rgba(248, 249, 250, 1);
   border-radius: 18px;
   align-content: left;
-  box-shadow: 
-  inset 5px 0px 10px rgba(0, 0, 0, 0.25),  /* Left shadow */
-  inset -5px 0px 10px rgba(0, 0, 0, 0.25), /* Right shadow */
-  inset 0px -5px 10px rgba(0, 0, 0, 0.25); /* Bottom shadow */
+ 
 }
 .card1 img{
   width: 100%;
@@ -216,12 +240,18 @@ background-size: 100% 650px;
   padding-top: 3%;
  
 }
-.archivehead p{
+.archivehead{
+  width: 100%;
+  padding: 20%;
+padding-top: 2%;
+padding-bottom: 10%;
+}
+/* .archivehead p{
   padding-top: 2%;
   padding-bottom: 3%;
-}
+} */
 
-.achivediv{
+/* .achivediv{
   margin: 3%;
   width: 1243px;
   height: 176px;
@@ -232,7 +262,7 @@ background-size: 100% 650px;
   border-radius: 0 30px 30px 30px;
 justify-content: space-between;
 align-items: center;
-}
+} */
 .achivediv p{
   width: 80%;
   align-content: center;
@@ -252,7 +282,7 @@ align-items: center;
 .wholeachive{
   padding-bottom: 5%;
   width: 100%;
-  background-color: rgba(248, 249, 250, 1);
+  background-color: white;
 }
 .partnerdiv h1{
   font-size: 32px;
@@ -262,9 +292,56 @@ align-items: center;
   font-size: 20px;
   font-weight: 400px;
 }
+
+.emergency-container {
+  background-color: #d50000; /* deep red */
+  color: white;
+  text-align: center;
+  padding: 70px 210px;
+  border-radius: 4px;
+}
+
+.emergency-container h2 {
+  font-size: 40px;
+  font-weight: 700px;
+  margin-bottom: 15px;
+}
+
+.emergency-container p {
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+  line-height: 30px;
+
+}
+
+.find-donor-btn {
+  background-color: #D10000;
+  color: #FFFFFF;
+  font-weight: 700px;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  width: 218px;
+  height: 54px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0px 8px 12px rgba(51, 51, 51, 0.25);
+
+}
+
+.find-donor-btn:hover {
+ background-color: #FFFFFF;
+ color: #D10000;
+ 
+}
+
+
+
 .testinmonysec{
   
-  background-color: rgba(245, 238, 236, 1);
+  background-color: #F8F9FA;
   padding: 3%;
 }
 .testinmonysec h1{
@@ -278,8 +355,9 @@ align-items: center;
  grid-template-columns: 1fr 1fr;
  grid-template-rows: 1fr 1fr;
  gap: 0;
+  
 }
- .withback{
+ /* .withback{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -290,7 +368,7 @@ align-items: center;
   width: 590px;
   padding: 2%;
   border-radius: 5px;
-}
+} */
 .testintrop{
   width: 851px;
   height: 109px;
@@ -311,7 +389,8 @@ align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: inset 0 0 0 5px rgba(245, 238, 236, 1);
+ 
+  border: 1px solid #333333;
 }
 .withback img{
   padding-top: 40%;
@@ -321,21 +400,27 @@ align-items: center;
 }
 .LatestBlogs{
   background-color: rgba(248, 249, 250, 1);
+ 
+ 
 }
 .Ministerspeak{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-radius: 46px;
-  height: 482px;
+  height: 346px;
+  width: 1011px;
  margin-top: 3%;
  margin: 2%;
- background-color: rgba(251, 245, 245, 1);
- padding: 0;
+ margin-left: 12%;
+ background-color: #FFFFFF;
+ padding: 110px;
+ padding-top: 50px;
+ border:1px solid #D10000
 }
 .miisterwords{
   width: 617px;
-  padding: 20px;
+ 
 }
 .miisterwords p{
   font-weight: 400px;
@@ -350,9 +435,11 @@ align-items: center;
 }
 .miisterimg img{
   border-radius: 40px;
+  width: 319px;
+  height:273px;
 }
 .miisterimg{
-  padding: 20px;
+padding: 1%;
 }
 .bloogsdiv{
   display: flex;
@@ -483,14 +570,14 @@ color: white;
  
 }
 .footdiv p{
-  line-height: 50px;
-  font-weight: 400px ;
+  line-height: 26px;
+  font-weight: 500px ;
   font-size: 16px;
 }
 .footdiv h4{
   padding-bottom: 7%;
   font-weight:700px;
-  font-size:  30px;
+  font-size:  24px;
   
 }
 .words p{
@@ -501,7 +588,7 @@ color: white;
   width: 60px;
   height: 60px;
   background-color: rgba(255, 255, 255, 1);
-  color: rgba(255, 201, 201, 1);
+  color: #D10000;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -558,7 +645,7 @@ color: white;
   background-color: rgba(248, 249, 250, 1);
 }
 .readmoreblogp{
-  color: rgba(21, 101, 192, 1);
+  color: #D10000;
   cursor: pointer;
   margin-top: 4%;
 }
@@ -574,8 +661,13 @@ color: white;
   justify-content: space-between;
   width:120px;
   height: 85px;
-  margin: 4%;
-  margin-left: 5%;
+ 
+ 
+}
+.padp{
+  padding: 5%;
+  padding-right: 5%;
+  padding-left: 5%;;
 }
 
 
@@ -621,12 +713,11 @@ color: white;
   align-items: center;
   justify-content: left; /* Centers text & icon */
   padding-left: 15%;
-  
   gap: 10px; /* Adds space between icon & text */
-  border: 2px solid rgba(183, 28, 28, 1);
+  border: 2px solid #D10000;
   border-radius: 30px;
   background: rgba(255, 255, 255, 1);
-  color:rgba(183, 28, 28, 1);
+  color:#D10000;
   font-size: 12.2px;
   font-weight: 700px;
   width: 280px; /* Adjust button width */
@@ -636,7 +727,7 @@ color: white;
   white-space: nowrap; /* Prevents text from breaking */
 }
  Link{
-  color:rgba(183, 28, 28, 1);
+  color:#D10000;
 
 }
 
@@ -668,7 +759,7 @@ color: white;
   content: "";
   flex: 1;
   height: 2px;
-  background-color: rgba(183, 28, 28, 1);
+  background-color: #D10000;
 }
 .signupform {
   display: flex;
@@ -689,7 +780,7 @@ color: white;
 .signupform input {
   width: 100%;
   padding: 10px;
-  border: 2px solid rgba(183, 28, 28, 1);
+  border: 2px solid #D10000;
   border-radius: 20px;
   margin-bottom: 15px;
   font-size: 16px;
@@ -699,7 +790,7 @@ color: white;
 .signupform button {
   width: 215px;
   padding: 12px;
-  background-color: rgba(183, 28, 28, 1);
+  background-color: #D10000;
   color: white;
   border: none;
   border-radius: 20px;
@@ -709,14 +800,14 @@ color: white;
 }
 
 .signupform-btn:hover {
-  background-color: darkred;
+  background-color: #D10000;
 }
 .donorpagedown{
   margin-top: 7%;
 }
 
 .donorpageintro button{
-  background-color: rgba(159, 22, 22, 1);
+  background-color: #D10000;
   border-radius: 50px;
   width: 157px;
   height: 32.23255920410156px;
@@ -967,6 +1058,7 @@ margin: 1%;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
+  
 }
 
 .header-buttons button {
@@ -2150,13 +2242,688 @@ th, td {
 .transfusionActionBtn.confirm {
   background-color: red;
 }
+.missiontodaycont {
+  background-color: #F7F2F3; 
+  color: #333333;
+  text-align: center;
+  padding: 70px 210px;
+  border-radius: 4px;
+}
+
+.missiontodaycont h2 {
+  font-size: 40px;
+  font-weight: 700px;
+  margin-bottom: 15px;
+}
+
+.missiontodaycont p {
+  font-size: 20px;
+  font-weight: 700px;
+  margin-bottom: 30px;
+  line-height: 30px;
+
+}
+
+.missiontbtn {
+  background-color: #D10000;
+  color: #FFFFFF;
+  font-weight: 700px;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  width: 197px;
+  height: 56px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0px 8px 12px rgba(51, 51, 51, 0.25);
+
+}
+
+.missiontbtn:hover {
+ background-color: #FFFFFF;
+ color: #D10000;
+ 
+}
+
+.impact-stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #F7F2F3;
+}
+
+.impact-stat-card {
+  text-align: center;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-left: 3px solid red;
+  background: #F7F2F3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  min-width: 180px;
+  transition: transform 0.3s;
+}
+
+.impact-stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.impact-icon {
+  font-size: 2.5rem;
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+.impact-value {
+  font-size: 1.8rem;
+  color: black;
+  margin: 0;
+}
+
+.impact-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero-section {
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Area */
+.hero-section .overlay {
+  background-image: url('images/blooood.png'); /* background image path*/
+  background-size: cover;
+  background-position: center;
+  height: 850px;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section .overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  gap: 5rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 195px;
+  height: 46px;
+  border-radius: 10px;
+}
+
+.donate-btn {
+  background-color: red;
+  color: white;
+}
+
+.find-btn {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+/* Mission and Vision */
+.mission-vision-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.text-block {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.text-block h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color:#333333;
+}
+
+.text-block p {
+  font-size: 1rem;
+  color:#333333;
+  line-height: 1.6;
+}
+.donation-info-container {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+ padding-top: 4%;
+  text-align: center;
+}
+
+.why-donation h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  border: 1.5px solid #D10000;
+  border-radius: 8px;
+  padding: 6rem 2rem;
+  width: 378px;
+  height: 256px;
+  transition: all 0.3s;
+  
+}
+
+.stat-card h3 {
+  color: red;
+  font-size: 32px;
+  font-weight: 900px;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 18px;
+  font-weight: 400px;
+  color: #333333;
+}
+
+.highlight-card {
+  border: 1px solid #D10000;
+}
+
+.transparency-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.transparency-section{
+  height: 438px;
+  padding-top: 80px;
+}
+.transparencycover{
+  background-color: #F7F2F3;
+}
+.subtext {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  
+}
+
+.feature-card {
+  width: 200px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 0.5rem;
+ border-radius: 50px;
+ height: 71px;
+ width: 71px;
+ padding: 15px;
+  border: 1px solid #D10000;
+}
+
+.feature-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #333333;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+.donationinfobtn {
+  background-color: #D10000;
+  color: #FFFFFF;
+  font-weight: 700px;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  width: 197px;
+  height: 56px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0px 8px 12px rgba(51, 51, 51, 0.25);
+}
+
+.donationinfobtn:hover {
+  background-color: darkred;
+}
 
 
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #D10000;
+}
 
-
-
+.active-link {
+  color: #D10000;
+  font-weight: bold;
+}
 
 @media(max-width:430px){
+   /* Hero Section */
+   .hero-section .overlay {
+    background-size: cover;
+    height: 420px;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    height: 42px;
+    font-size: 0.95rem;
+  }
+
+  /* Mission and Vision */
+  .text-block h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    padding-left: 2%;
+    color:#333333;
+  }
+
+  .text-block p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    text-align: left;
+    color:#333333;
+  }
+  .feature-icon {
+    font-size: 1rem;
+    color: #333333;
+   margin-left: 45%;
+   border-radius: 50px;
+   height: 30px;
+   width: 30px;
+  padding: 2%;
+    border: 1px solid #D10000;
+  }
+
+  /* Donation Info Cards */
+  .stat-card {
+    width: 90%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .stat-card h3 {
+    font-size: 24px;
+  }
+
+  .stat-card p {
+    font-size: 0.95rem;
+  }
+
+  .stats-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Transparency Section */
+  .transparency-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .transparency-section h2 {
+    font-size: 22px;
+    font-weight: 700px;
+    color: #333333;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+  }
+  nav{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding: 2%;
+    
+    background-color:rgba(245, 238, 236, 1);
+    height: 50px;
+   
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000; 
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding-top: 4%;
+  }
+
+  .buttondiv {
+    display: none; /* hide buttons in mobile view for simplicity */
+  }
+  .missiontodaycont {
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .missiontodaycont h2 {
+    font-size: 28px;
+  }
+
+  .missiontodaycont p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .missiontbtn {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .Ministerspeak {
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    margin: 5% auto;
+    padding: 30px 20px;
+    align-items: center;
+  }
+
+  .miisterwords {
+    width: 100%;
+    text-align: left;
+  }
+
+  .miisterwords h1 {
+    font-size: 24px;
+  }
+
+  .miisterwords p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .miisterimg {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .miisterimg img {
+    width: 300.3px;
+    height: 257px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .bloogsdiv {
+    flex-direction: column;
+    margin: 5% 3%;
+  }
+
+  .blog-container {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .blogwidth {
+    width: 100%;
+    align-items: center;
+  }
+
+  .blogwidth img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card1-text {
+    text-align: center;
+  }
+  .testinmonysec h1 {
+    font-size: 16px;
+    font-weight: 700px;
+  }
+
+  .testimonycardmain {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .testintrop {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8%;
+    padding: 0 10px;
+  }
+
+  .testintrop p {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400px;
+  }
+
+  .without {
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .without img,
+  .withback img {
+    margin: 2%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .emergency-container {
+    padding: 40px 20px;
+    border-radius: 0;
+  }
+
+  .emergency-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .emergency-container p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .find-donor-btn {
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+    padding: 10px;
+    height: auto;
+    
+  }
+  .why-donation h2 {
+  font-weight:700px;
+  font-size: 22px;
+  
+  margin-bottom: 1.5rem;
+ 
+  color: #333333;
+  }
+  .donationintro{
+    width: 875px;
+    height: 109px;
+    padding: 6%;
+    padding-top: 2%;
+    font-weight: 400px;
+    font-size: 12px;
+  }
+  .archivehead{
+   
+    padding: 10%;
+    text-align: center;
+  }
+  .aboutsec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .abouttext {
+    padding: 5%;
+    text-align: center;
+  }
+
+  .subabout {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .wholeaboutsec {
+    padding: 5%;
+  }
+
+  .subabout ul {
+    padding-left: 15px;
+    text-align: left;
+  }
+
+  .subabout ul li {
+    margin-left: 5%;
+    font-size: 14px;
+  }
+
+  .subabout p {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .subabout h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .herosec {
+    padding: 5%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .herotext {
+    padding-top: 25%;
+    text-align: center;
+  }
+
+  .herotext h1 {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+
+  .herotext p {
+    font-size: 14px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .herotext button {
+    width: 90%;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
   .filters{
     
    padding-bottom: 3%;
@@ -2425,8 +3192,34 @@ flex-direction: column;
   font-size:24px;
   font-weight: 700px;
 }
+.padp{
+  padding: 5%;
+  height: 200px;
+ width: 369px;
+}
 .partnerdiv{
-  display: none;
+ text-align: left;
+ font-size: 12px;
+ font-weight: 400px;
+ padding-left: 5%;
+ color:#333333;
+}
+.partnerdiv h1{
+  font-size: 22px;
+ font-weight: 700px;
+ color:#333333;
+}
+.partners-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  justify-content: space-between;
+  padding: 6%;
+  
+}
+.partners-container img{
+  height: 50px;
+  width: 110px;
+  padding: 6%;
 }
 .achivediv{
   margin: 5%;
@@ -2466,11 +3259,12 @@ flex-direction: column;
 .Ministerspeak{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 360px;
+
  margin-top: 3%;
- border-radius: 0;
+ border-radius: 46;
  background-color: rgba(251, 245, 245, 1);
- padding: 2%;
+ padding: 5%;
 }
 .miisterwords h1{
   font-weight: 700px;
@@ -2499,6 +3293,7 @@ align-items: flex-start; /* Aligns text and content to the left */
 }
 .card1-text{
   width: 98%;
+  text-align: left;
 }
 .blogwidth img{
   width: 100%;

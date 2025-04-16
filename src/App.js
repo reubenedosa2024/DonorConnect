@@ -1,13 +1,13 @@
 import './App.css';
 import Layout from './Layout';
 import NoLayout from './NoLayout';
-import Homepage from './Homepage'
+import Homepage from './pages/Homepage'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import  DonorPage from './DonorPage';
-import Blogs from './Blogs';
-import Reciepientpage from './Reciepientpage';
-import Hospitaldash from './Hospitaldash'
-
+import  DonorPage from './pages/DonorPage';
+import Blogs from './components/Blogs';
+import Reciepientpage from './pages/Reciepientpage';
+import Hospitaldash from './pages/Hospitaldash'
+import Aboutuspage from './pages/Aboutuspage';
 function App() {
   return (
     <div className="App">
@@ -20,6 +20,7 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/reciepientpage" element={<Reciepientpage />} />
             <Route path="/hospitaldash" element={<Hospitaldash />} />
+            <Route path="/aboutuspage" element={<Aboutuspage />} />
           </Route>
 
           {/* Routes that should NOT have Navbar and Footer */}
