@@ -1,7 +1,7 @@
 import './App.css';
 import Layout from './Layout';
 import NoLayout from './NoLayout';
-import Homepage from './Homepage'
+import Homepage from './pages/Homepage'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import  DonorPage from './DonorPage';
 import Blogs from './Blogs';
@@ -15,6 +15,10 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Homepage />} />
             <Route path="/donorPage" element={<DonorPage />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/reciepientpage" element={<Reciepientpage />} />
+            <Route path="/hospitaldash" element={<Hospitaldash />} />
+            <Route path="/aboutuspage" element={<Aboutuspage />} />
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/reciepientpage" element={<Reciepientpage />} />
             

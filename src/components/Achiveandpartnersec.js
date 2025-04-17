@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
-import redcross from './images/redcross.png';
-import savethechildren from './images/savethechildren.png';
-import NBTS from './images/NBTS.png';
-import WHO from './images/WHO.png';
-import UNICEF from './images/UNICEF.png';
-import gbf from './images/gbf.png';
-import nbsa from './images/nbsa.png';
+import '../App.css';
+import redcross from '../images/redcross.png';
+import savethechildren from '../images/savethechildren.png';
+import NBTS from '../images/NBTS.png';
+import WHO from '../images/WHO.png';
+import UNICEF from '../images/UNICEF.png';
+import gbf from '../images/gbf.png';
+import nbsa from '../images/nbsa.png';
+import ImpactStats from '../components/ImpactStats';
 const Achiveandpartnersec = () => {
     // const partners = [
     //     { src: {redcross}, alt: 'Red Cross' },
@@ -28,9 +29,13 @@ const Achiveandpartnersec = () => {
         <div className='wholeachive'>
         <div className='archivehead'>
             <h1>Archivements</h1>
-            <p>we have help save different victim life through  with the blood donated, see  some below</p>
+            <p>Every drop of blood donated through our platform has helped rewrite someone’s story. Here’s the impact you made possible:</p>
         </div>
-         <div className='achivediv'>
+        <ImpactStats/>
+        
+
+
+         {/* <div className='achivediv'>
             <div className='achivetext'>
             <h2>2,828</h2>
             <p>Number of Patients Helped</p>
@@ -65,7 +70,7 @@ const Achiveandpartnersec = () => {
             <img src={gbf}/>
             <img src={nbsa}/>
             </div>
-        </div>
+        </div> */}
             </div>
     );
 };

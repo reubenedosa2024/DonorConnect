@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import { FaRegCalendarAlt } from "react-icons/fa";
 
 const Blogcard = (props) => {
@@ -7,7 +7,7 @@ const Blogcard = (props) => {
 
     return (
         <div className="blogwidth">
-            <img src={require("./images/" + props.Cardimg)} alt="cardimage"/>
+            <img src={require("../images/" + props.Cardimg)} alt="cardimage"/>
         <div className='card1-text'>
         {/* <p>{props.d}</p> */}
         <div className="event-date">

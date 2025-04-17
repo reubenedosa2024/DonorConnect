@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import '../App.css';
 import { FaCalendarCheck, FaMapMarkerAlt, FaFlask } from "react-icons/fa";
 const hospitals = [
   {

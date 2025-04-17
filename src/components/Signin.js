@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import '../App.css';
 import { FaGoogle, FaApple, FaPhoneAlt } from "react-icons/fa";
 
 const Signin = ({ closeOverlay }) => {

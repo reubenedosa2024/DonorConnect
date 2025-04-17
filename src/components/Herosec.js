@@ -1,6 +1,6 @@
 import React from 'react';
  // Import CSS file for styling
-import './App.css';
+import '../App.css';
 const Herosec = () => {
     return (
         <section class="herosec">

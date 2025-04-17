@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './App.css';
+import '../App.css';
 
 const hospitals = ["Gifted Hand Hospital", "Free Land Hospital", "Lagoon Hospital"];
 const timeSlots = [

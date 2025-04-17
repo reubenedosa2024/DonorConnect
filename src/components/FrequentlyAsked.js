@@ -1,5 +1,5 @@
 import React , { useState } from 'react';
-import './App.css'
+import '../App.css'
 const FrequentlyAsked = () => {
     const faqs = [
       { question: "How long does it take to donate blood?", answer: "The donation process takes about an hour, but the actual blood collection takes 10-15 minutes." },

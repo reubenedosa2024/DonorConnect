@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import TestimonyCard from './TestimonyCard';
-import tcard1 from './images/tcard1.png';
-import tcard2 from './images/tcard2.png';
-import tcard3 from './images/tcard3.png';
-import tcard4 from './images/tcard4.png';
+import tcard1 from '../images/tcard1.png';
+import tcard2 from '../images/tcard2.png';
+import tcard3 from '../images/tcard3.png';
+import tcard4 from '../images/tcard4.png';
 const Testinmonysec = () => {
    
     const tcardp1="This app made donating  so easy! I could schedule my appointment in minutes, find the nearest donation center, and even track my donation history . it a big lifesaver!";
@@ -30,8 +30,8 @@ const Testinmonysec = () => {
         </div>
         </center>
         <div className="testimonycardmain">
-        < TestimonyCard  Cardimg = {timage1} h={ tcardh1} p={tcardp1} className="withback"/>
-        < TestimonyCard  Cardimg = {timage2} h={ tcardh2} p={tcardp2} className="withback"/>
+        < TestimonyCard  Cardimg = {timage1} h={ tcardh1} p={tcardp1} className="without"/>
+        < TestimonyCard  Cardimg = {timage2} h={ tcardh2} p={tcardp2} className="without"/>
         < TestimonyCard Cardimg = {timage3} h={ tcardh3} p={tcardp3} className="without"/>
         < TestimonyCard Cardimg = {timage4} h={ tcardh4} p={tcardp4} className="without"/>
         </div>

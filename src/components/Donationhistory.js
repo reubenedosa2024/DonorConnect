@@ -1,5 +1,5 @@
 import React from "react";
-import "./App"; // Ensure you create and modify this file for styling
+import "../App"; // Ensure you create and modify this file for styling
 
 const donations = [
   { date: "Dec 16 2023", location: "Luth General hospital Lagos", volume: "450ml", status: "Completed" },

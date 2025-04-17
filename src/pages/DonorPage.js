@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
-import centerimage1 from "./images/centerimage1.png";
-import centerimage2 from "./images/centerimage2.png";
-import centerimage3 from "./images/centerimage3.png";
-import FindDonationCenter from "./FindDonationCenter";
-import Hospitallist from "./Hospitallist";
-import Schedule from "./Schedule";
-import Notification from "./Notification";
-import Donationhistory from "./Donationhistory";
+import '../App.css';
+import centerimage1 from "../images/centerimage1.png";
+import centerimage2 from "../images/centerimage2.png";
+import centerimage3 from "../images/centerimage3.png";
+import FindDonationCenter from "../components/FindDonationCenter";
+import Hospitallist from "../components/Hospitallist";
+import Schedule from "../components/Schedule";
+import Notification from "../components/Notification";
+import Donationhistory from "../components/Donationhistory";
 
 const DonorPage = () => {
     
