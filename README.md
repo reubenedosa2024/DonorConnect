@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+HEAD
 # DonorConnect
 DonorConnect is an innovative web platform designed to bridge the gap between blood donors and those in urgent need of blood.
-=======
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
