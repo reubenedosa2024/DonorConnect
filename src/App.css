@@ -163,7 +163,7 @@ background-size: 100% 730px;
   width: 100%;
   height: auto;
   border-radius: 20px; /* For rounded corners */
-/* } */ */
+/* } */ 
 
 /* .aboutimagediv .image2 {
   position: absolute;
@@ -172,7 +172,7 @@ background-size: 100% 730px;
  /* width: 85%; /* Smaller than the first image */
   /*border-radius: 15px; /* Rounded corners */
  /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);*/ /* Soft shadow */
-/* } */ */
+/* } */ 
 .subabout{
   margin: 4%;
   margin-top:2%;
@@ -629,7 +629,7 @@ color: white;
 }
 
 .toggle-btn {
-  font-size: 22px; /* Bigger plus/minus sign */
+  font-size: 22px; /* Bigger plus minus sign */
   font-weight: bold;
   cursor: pointer;
 }
