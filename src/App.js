@@ -2,7 +2,7 @@ import './App.css';
 import Layout from './Layout';
 import NoLayout from './NoLayout';
 import Homepage from './pages/Homepage'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from "react-router-dom";
 import  DonorPage from './pages/DonorPage';
 import Blogs from './Blogs';
 import Reciepientpage from './pages//Reciepientpage'
@@ -11,6 +11,7 @@ import Aboutuspage from './pages/Aboutuspage'
 function App() {
   return (
     <div className="App">
+      <BrowserRouter basename='/DonorConnect-Web'>
 	 <Router>
         <Routes>
           {/* Routes that should have Navbar and Footer */}
@@ -32,6 +33,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      </BrowserRouter>
 	</div>
   );
 }
