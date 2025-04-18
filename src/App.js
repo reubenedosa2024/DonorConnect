@@ -3,9 +3,11 @@ import Layout from './Layout';
 import NoLayout from './NoLayout';
 import Homepage from './pages/Homepage'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import  DonorPage from './DonorPage';
+import  DonorPage from './pages/DonorPage';
 import Blogs from './Blogs';
-import Reciepientpage from './Reciepientpage'
+import Reciepientpage from './pages//Reciepientpage'
+import  Hospitaldash from "./pages/Hospitaldash";
+import Aboutuspage from './pages/Aboutuspage'
 function App() {
   return (
     <div className="App">
