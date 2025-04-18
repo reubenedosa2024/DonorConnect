@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/DonorConnect/static/css/main.06a41941.css",
+    "main.js": "/DonorConnect/static/js/main.7411e096.js",
+    "static/js/453.c8920229.chunk.js": "/DonorConnect/static/js/453.c8920229.chunk.js",
+    "static/media/herobackground.png": "/DonorConnect/static/media/herobackground.03c0e15e49fe7091833e.png",
+    "static/media/newback.png": "/DonorConnect/static/media/newback.bfc53b306657bd970999.png",
+    "static/media/newblodback.png": "/DonorConnect/static/media/newblodback.af99839440eb92253088.png",
+    "static/media/blooood.png": "/DonorConnect/static/media/blooood.50b96d762274d9ebbfab.png",
+    "static/media/aboutimage2.png": "/DonorConnect/static/media/aboutimage2.32adc8b8a1b7413bcefe.png",
+    "static/media/blog2.png": "/DonorConnect/static/media/blog2.a8c33169f1c1ee732679.png",
+    "static/media/blog3.png": "/DonorConnect/static/media/blog3.fc16416547b440c5e1e2.png",
+    "static/media/min.png": "/DonorConnect/static/media/min.326aea9d2ee2deb76c18.png",
+    "static/media/centerimage2.png": "/DonorConnect/static/media/centerimage2.ccf6a63413c13cdb531e.png",
+    "static/media/vidc3.png": "/DonorConnect/static/media/vidc3.28aae3650eb9250dd0a6.png",
+    "static/media/vidc2.png": "/DonorConnect/static/media/vidc2.86635531cfcfc877b0f3.png",
+    "static/media/centerimage3.png": "/DonorConnect/static/media/centerimage3.6975b09327b59d470d59.png",
+    "static/media/card1image3.png": "/DonorConnect/static/media/card1image3.f8957dbdbb28814f1597.png",
+    "static/media/centerimage1.png": "/DonorConnect/static/media/centerimage1.be15e3bf9b36a207b166.png",
+    "static/media/givingblodimg.png": "/DonorConnect/static/media/givingblodimg.fc347690d50751c0bc88.png",
+    "static/media/car1image1.png": "/DonorConnect/static/media/car1image1.292009fd51a84de7fad7.png",
+    "static/media/car1image2.png": "/DonorConnect/static/media/car1image2.d6a91a3ca5c99f065887.png",
+    "static/media/vidc1.png": "/DonorConnect/static/media/vidc1.e78242c7200733b75447.png",
+    "static/media/WHO.png": "/DonorConnect/static/media/WHO.7ec14880d84542141e6c.png",
+    "static/media/gbf.png": "/DonorConnect/static/media/gbf.6f1a67892209a5d2fa3c.png",
+    "static/media/tcard3.png": "/DonorConnect/static/media/tcard3.10f6ed9b50b59d8bc482.png",
+    "static/media/tcard2.png": "/DonorConnect/static/media/tcard2.a573a2dfa956b1a90494.png",
+    "static/media/tcard4.png": "/DonorConnect/static/media/tcard4.3b7be4ef2c2b118b75fb.png",
+    "static/media/NBTS.png": "/DonorConnect/static/media/NBTS.1830ea14b94c32d8f3a1.png",
+    "static/media/tcard1.png": "/DonorConnect/static/media/tcard1.eca268e42421cfcfe889.png",
+    "static/media/nbsa.png": "/DonorConnect/static/media/nbsa.aef03fedf26b45f19f03.png",
+    "index.html": "/DonorConnect/index.html",
+    "main.06a41941.css.map": "/DonorConnect/static/css/main.06a41941.css.map",
+    "main.7411e096.js.map": "/DonorConnect/static/js/main.7411e096.js.map",
+    "453.c8920229.chunk.js.map": "/DonorConnect/static/js/453.c8920229.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06a41941.css",
+    "static/js/main.7411e096.js"
+  ]
+}
