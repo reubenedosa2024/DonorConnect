@@ -22,13 +22,13 @@ const Homepage = () => {
             
                <div><Herosec/></div>
                <div><AboutSec/></div>
-               <div><Achiveandpartnersec/></div>
-               <div><DonateTempsec/></div>
-               <div> <EmergencyBlood /></div>
-               <div><Testinmonysec/></div>
-               <div><LatestBlogs/></div>
-               <div><FrequentlyAsked/></div>
-               <div><Missiontodaysec/></div>
+               <div data-aos="zoom-in"><Achiveandpartnersec/></div>
+               <div data-aos="zoom-in"><DonateTempsec/></div>
+               <div data-aos="zoom-in"> <EmergencyBlood /></div>
+               <div data-aos="zoom-in"><Testinmonysec/></div>
+               <div data-aos="zoom-in"><LatestBlogs/></div>
+               <div data-aos="zoom-in"><FrequentlyAsked/></div>
+               <div ><Missiontodaysec/></div>
             </>
             
         </div>

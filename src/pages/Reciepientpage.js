@@ -47,17 +47,18 @@ const Reciepientpage = () => {
     </div>
   </div>
   <FormWithMap/>
-  <div className='resultnearmaindiv'>
-            
-           <div className="donorListContainer">
-           <div> <h1>Result near you</h1> <p>See result that match with your request</p></div>
-      <div className="donorGrid">
-        {donorslist.map((donor, index) => (
-          <Resultnearyoucard key={index} {...donor} />
-        ))}
-      </div>
+  <div className="resultnearmaindiv">
+  <div className="donorListContainer">
+    <h1>Result near you</h1>
+    <p>See results that match your request</p>
+    <div className="donorGrid">
+      {donorslist.map((donor, index) => (
+        <Resultnearyoucard key={index} {...donor} />
+      ))}
     </div>
   </div>
+</div>
+
   <div>
       <NotificationList />
     </div>

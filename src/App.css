@@ -672,20 +672,20 @@ color: white;
 
 
 /* Overlay Background */
-.overlay {
+/* .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.6); 
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* Modal Box */
-.modal {
+/* .modal {
   background: rgba(255, 255, 255, 1);
   padding: 20px;
   border-radius: 10px;
@@ -696,7 +696,54 @@ color: white;
  padding-left: 15%;
  padding-right: 15%;
   
+} */
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999; /* make sure it's on top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.3s forwards;
 }
+
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  max-height: 90vh;
+  transform: translateY(-20px);
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
 
 .signup-container {
   display: flex;
@@ -2337,7 +2384,8 @@ th, td {
   background-size: cover;
   background-position: center;
   height: 850px;
- background-size: 100% 100%;
+ z-index: 1;
+ width: 100%;
  background-repeat: no-repeat;
   position: relative;
   height: 500px;
@@ -2558,15 +2606,482 @@ th, td {
   color: #D10000;
   font-weight: bold;
 }
+.mobile-auth-buttons {
+  display: none;
+}
+
+
+/* functionalities styling */
+.signuperror {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.signupsuccess {
+  color: green;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.error-border {
+  border: 1px solid red !important;
+}
+
+
+.spinner {
+  border: 4px solid rgba(0,0,0,0.1);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+.skeleton-row {
+  height: 50px;
+  border-radius: 6px;
+  background: linear-gradient(-90deg, #eeeeee, #dddddd, #eeeeee);
+  background-size: 400% 400%;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+
+
+/* .pagination-controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+
+
 
 @media(max-width:430px){
+  .modal {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .modal input,
+  .modal button {
+    font-size: 14px;
+  }
+
+
+  .buttondiv {
+    display: none;
+  }
+  
+  .mobile-auth-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .mobile-auth-buttons button {
+    padding: 10px;
+    background-color: #D10000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mobile-auth-buttons button:hover {
+    background-color: #a80000;
+  }
+
+
+
+
+.donor-container {
+    margin-top: 20%;
+    padding: 10px;
+  }
+
+  .donor-container h1 {
+    font-size: 15px;
+  }
+
+  .donor-container p {
+    font-size: 10px;
+  }
+
+  .donor-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .donor-card {
+    width: 178px;
+    height: 105px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    
+    box-shadow: none;
+  }
+
+  .donor-img,
+  .donor-initial {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    flex-shrink: 0;
+  }
+
+  .donorcarddetails {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .donor-location,
+  .donor-blood {
+    font-size: 12px;
+  }
+
+  .request-btn {
+    margin-top: 5px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+
+
+  .resultnearmaindiv {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  .donorListContainer {
+    width: 100%;
+  }
+  
+  .donorGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .donor-card {
+    background-color: #fff;
+    border: 1px solid #d10000;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 13px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+
+
+
+
+  .notificationContainer {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow-x: hidden;
+  }
+  
+  .notificationTitle {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .notibut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  
+  .allBtn {
+    padding: 8px 16px;
+    border: 1px solid #d10000;
+    background-color: #fff;
+    color: #d10000;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  
+  .searchBox {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  .notificationGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .categoryTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .notificationCount {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+  }
+  
+  .pageBtn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #d10000;
+    background-color: #fff;
+    color: #d10000;
+    cursor: pointer;
+  }
+  
+  .pageBtn.active {
+    background-color: #d10000;
+    color: #fff;
+  }
+  
+  /* Optional: prevent body scroll issues */
+  
+
+  @media (max-width: 430px) {
+    .commissionContainer {
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+  
+    .sidebar {
+      width: 100%;
+      padding: 16px;
+      text-align: center;
+    }
+  
+    .sidebar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .sidebar li {
+      font-size: 13px;
+      padding: 6px 10px;
+      background-color: #eaeaea;
+      border-radius: 6px;
+    }
+  
+    .mainContent {
+      width: 100%;
+      padding: 16px;
+    }
+  
+    .title {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .commissionBoxes {
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .box {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .amount {
+      font-size: 18px;
+    }
+  
+    .transactionhistrysep {
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+  
+    .transactionTable {
+      width: 600px; /* Keep horizontal scroll inside its container */
+      font-size: 12px;
+    }
+  
+    .printButton {
+      width: 100%;
+      margin-top: 15px;
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
+  
+
+
+
+
+
+  
+
+  
+  .container{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 50%;
+  }
+.form-group{
+  width: 100%;
+}
+.form-section{
+  width: 100%;
+}
+.map-section{
+  width: 100%;
+}
+.main{
+  margin-top:10%;
+}
+.donor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  
+}
+
+/* Card Styling */
+.donor-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #F7F2F3;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 178px;
+  height: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.donorcarddetails{
+  padding-left: 10%;
+  padding-right: 0%;
+}
+
+.donor-card:hover {
+  transform: scale(1.05);
+}
+
+/* Profile Image */
+.donor-img {
+  width: 20px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Initials (For Missing Images) */
+.donor-initial {
+  width: 50px;
+  height: 50px;
+  background: #d33;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+
    /* Hero Section */
-   .hero-section .overlay {
+  .hero-section .overlay {
+    background-size: cover;        /* More fluid scaling */
+    background-position: center;
+    height: 100vh;                 /* Full screen height */
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  /* .hero-section .overlay {
     background-size: cover;
     height: 420px;
     padding: 20px;
     flex-direction: column;
-  }
+  } */
+
 
   .hero-content h2 {
     font-size: 1.5rem;
@@ -2894,10 +3409,15 @@ th, td {
     padding-top: 10px;
     padding-bottom: 5px;
   }
-  .herosec {
-    padding: 5%;
+   .herosec {
     background-size: cover;
     background-position: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 
   .herotext {
@@ -3372,6 +3892,195 @@ align-items: flex-start; /* Aligns text and content to the left */
    
   }
 
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+  .modal {
+    max-width: 80%;
+    padding: 20px;
+  }
+
+  .modal input,
+  .modal button {
+    font-size: 16px;
+  }
+
+  .buttondiv {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mobile-auth-buttons {
+    display: none;
+  }
+
+  .donor-container {
+    margin-top: 10%;
+    padding: 20px;
+  }
+
+  .donor-container h1 {
+    font-size: 20px;
+  }
+
+  .donor-container p {
+    font-size: 14px;
+  }
+
+  .donor-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .donor-card {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .donor-img,
+  .donor-initial {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .donorcarddetails {
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .request-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .notificationTitle {
+    font-size: 24px;
+  }
+
+  .categoryTitle {
+    font-size: 18px;
+  }
+
+  .notificationCount {
+    font-size: 16px;
+  }
+
+  .searchBox {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 2%;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    height: 48px;
+  }
+
+  .stats-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .stat-card {
+    width: 48%;
+  }
+
+  .Ministerspeak {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .miisterimg img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-container {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .blogwidth {
+    width: 48%;
+  }
+
+  .testinmonysec h1 {
+    font-size: 20px;
+  }
+
+  .testintrop p {
+    font-size: 14px;
+  }
+
+  .emergency-container h2 {
+    font-size: 26px;
+  }
+
+  .emergency-container p {
+    font-size: 18px;
+  }
+
+  .find-donor-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .donationintro {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .subabout p,
+  .subabout ul li {
+    font-size: 16px;
+  }
+
+  .subabout h2 {
+    font-size: 22px;
+  }
+
+  .herotext h1 {
+    font-size: 28px;
+  }
+
+  .herotext p {
+    font-size: 16px;
+    width: 90%;
+  }
 }
 
 

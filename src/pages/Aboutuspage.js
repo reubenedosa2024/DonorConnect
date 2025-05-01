@@ -12,8 +12,8 @@ import BloodDonationInfo from '../components/BloodDonationInfo';
 const Aboutuspage = () => {
   return (
     <div>
-    <div className="hero-section">
-      <div className="overlay">
+    <div className="hero-section" >
+      <div className="overlay" data-aos="zoom-in">
         <div className="hero-content">
           <h2>About us</h2>
           <p>
@@ -27,7 +27,7 @@ const Aboutuspage = () => {
         </div>
       </div>
 
-      <div className="mission-vision-section">
+      <div className="mission-vision-section" data-aos="zoom-in">
         <div className="text-block">
           <h3>Our mission</h3>
           <p>
@@ -35,7 +35,7 @@ const Aboutuspage = () => {
             and we're committed to making blood donation effortless and accessible to all.
           </p>
         </div>
-        <div className="text-block">
+        <div className="text-block" >
           <h3>Our Vision</h3>
           <p>
             To create a world where every individual has timely access to safe life through a unified network of 
@@ -44,7 +44,7 @@ const Aboutuspage = () => {
         </div>
       </div>
     </div>
-    <div className='partnerdiv'>
+    <div className='partnerdiv' data-aos="zoom-in">
             <div>
                 <h1>Our Partners</h1>
                 <p>We collaborate with hospitals, NGOs, and corporations to ensure a seamless blood donation process.</p>

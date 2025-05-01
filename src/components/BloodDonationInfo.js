@@ -37,8 +37,8 @@ const features = [
 
 const BloodDonationInfo = () => {
   return (
-    <div className="donation-info-container">
-      <section className="why-donation">
+    <div className="donation-info-container" >
+      <section className="why-donation" data-aos="zoom-in">
         <h2>Why Blood Donation matters</h2>
         <div className="stats-cards">
           {stats.map((item, index) => (
@@ -50,7 +50,7 @@ const BloodDonationInfo = () => {
         </div>
       </section>
           <div className='transparencycover'>
-      <section className="transparency-section">
+      <section className="transparency-section" data-aos="zoom-in">
         <h2>Transparency & Trust</h2>
         <p className="subtext">
           Your safety and privacy are our top priorities. We adhere to the highest standards of protection and medical ethics.

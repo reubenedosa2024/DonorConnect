@@ -2,8 +2,16 @@ import React from "react";
 import "../App.css";
 import RecipientRequest from "../components/RecipientRequest";
 import ScheduledDonorRequest from "../components/ScheduledDonorRequest";
-import CompletedTransferTable from "../components/CompletedTransferTable"
+import CompletedTransferTable from "../components/CompletedTransferTable";
+import  { useState, useEffect } from "react";
+
 const Hospitaldash = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setLoading(false), 2000); // simulate load
+    return () => clearTimeout(timeout);
+  }, []);
   const transactions = [
     {
       date: "25/03 2025",
@@ -47,6 +55,13 @@ const Hospitaldash = () => {
     },
   ];
 
+  const SkeletonRow = () => (
+    <tr>
+      <td colSpan="6">
+        <div className="skeleton-row"></div>
+      </td>
+    </tr>
+  );
   
 
   return (
@@ -100,25 +115,34 @@ const Hospitaldash = () => {
             </tr>
           </thead>
           <tbody>
-            {transactions.map((transaction, index) => (
-              <tr key={index}>
-                <td>{transaction.date}</td>
-                <td>{transaction.name}</td>
-                <td>{transaction.bloodType}</td>
-                <td>{transaction.amount}</td>
-                <td>
-                  <span
-                    className={`status ${
-                      transaction.status === "Paid" ? "paid" : "pending"
-                    }`}
-                  >
-                    {transaction.status}
-                  </span>
-                </td>
-                <td>{transaction.datePaid}</td>
-              </tr>
-            ))}
-          </tbody>
+  {loading ? (
+    <>
+      <SkeletonRow />
+      <SkeletonRow />
+      <SkeletonRow />
+    </>
+  ) : (
+    transactions.map((transaction, index) => (
+      <tr key={index}>
+        <td>{transaction.date}</td>
+        <td>{transaction.name}</td>
+        <td>{transaction.bloodType}</td>
+        <td>{transaction.amount}</td>
+        <td>
+          <span
+            className={`status ${
+              transaction.status === "Paid" ? "paid" : "pending"
+            }`}
+          >
+            {transaction.status}
+          </span>
+        </td>
+        <td>{transaction.datePaid}</td>
+      </tr>
+    ))
+  )}
+</tbody>
+
         </table>
 
         {/* Print Button */}
