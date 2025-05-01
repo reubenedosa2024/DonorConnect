@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DonorConnect/static/css/main.c6eec690.css",
-    "main.js": "/DonorConnect/static/js/main.00d66711.js",
+    "main.css": "/DonorConnect/static/css/main.390cef5e.css",
+    "main.js": "/DonorConnect/static/js/main.0795ac37.js",
     "static/js/453.c8920229.chunk.js": "/DonorConnect/static/js/453.c8920229.chunk.js",
     "static/media/herobackground.png": "/DonorConnect/static/media/herobackground.03c0e15e49fe7091833e.png",
     "static/media/newback.png": "/DonorConnect/static/media/newback.bfc53b306657bd970999.png",
@@ -33,12 +33,12 @@
     "static/media/tcard1.png": "/DonorConnect/static/media/tcard1.eca268e42421cfcfe889.png",
     "static/media/nbsa.png": "/DonorConnect/static/media/nbsa.aef03fedf26b45f19f03.png",
     "index.html": "/DonorConnect/index.html",
-    "main.c6eec690.css.map": "/DonorConnect/static/css/main.c6eec690.css.map",
-    "main.00d66711.js.map": "/DonorConnect/static/js/main.00d66711.js.map",
+    "main.390cef5e.css.map": "/DonorConnect/static/css/main.390cef5e.css.map",
+    "main.0795ac37.js.map": "/DonorConnect/static/js/main.0795ac37.js.map",
     "453.c8920229.chunk.js.map": "/DonorConnect/static/js/453.c8920229.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6eec690.css",
-    "static/js/main.00d66711.js"
+    "static/css/main.390cef5e.css",
+    "static/js/main.0795ac37.js"
   ]
 }
