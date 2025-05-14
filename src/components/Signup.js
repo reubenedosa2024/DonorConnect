@@ -36,9 +36,9 @@ const SignUp = ({ closeOverlay }) => {
     if (Object.keys(formErrors).length === 0) {
       setErrors({});
       setLoading(true);
-  
+
       try {
-        const response = await axios.post("http://localhost:3000/signup", {
+        const response = await axios.post("http://localhost:5000/signup", {
           email,
           password
         });

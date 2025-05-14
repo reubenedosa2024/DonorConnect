@@ -3,6 +3,8 @@ import '../App.css';
 import { FaGoogle, FaApple, FaPhoneAlt } from "react-icons/fa";
 
 const Signin = ({ closeOverlay }) => {
+
+  // UseEffect 
   return (
     <div className="modal">
           <h2>Create an Account</h2>

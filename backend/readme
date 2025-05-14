@@ -1,0 +1,9 @@
+NODE_ENV= development
+PORT=5000
+MONGO_URI= mongodb+srv: add ur part 
+password = 
+nameofdb=
+JWT_SECRET=your_secret
+
+
+# npm i bcryptjs express-async-handler jsonwebtoken
